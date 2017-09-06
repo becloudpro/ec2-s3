@@ -11,5 +11,5 @@ function createBucket(bucketNamePrefix) {
 }
 
 function getTimestampInSeconds() {
-  return Math.round(Date.now() / 1000)
+  return Math.round(Date.now() / 1000);
 }

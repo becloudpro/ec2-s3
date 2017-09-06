@@ -4,7 +4,7 @@
   "description": "Working with AWS SDK from EC2 in order to interact with S3",
   "author": "BeCloudPro",
   "scripts": {
-    "start": "node app.js"
+    "start": "pm2 start app.js --name=\"ec2-s3\""
   },
   "dependencies": {
     "aws-sdk": "^2.108.0",

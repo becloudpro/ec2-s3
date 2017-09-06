@@ -3,7 +3,9 @@ const createFileInBucket = require('./src/02-create-file-in-bucket');
 const readFileInBucket = require('./src/03-read-file-in-bucket');
 const deleteBucket = require('./src/04-delete-bucket');
 
-module.exports = function(app) {
+module.exports = setupRoutes;
+
+function setupRoutes(app) {
   app.get('/', (req, res) => {
     res.send(`
       <html>
@@ -85,4 +87,4 @@ module.exports = function(app) {
       `);
     }).catch(next);
   });
-};
+}
